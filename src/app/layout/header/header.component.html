@@ -1,0 +1,23 @@
+<header>
+  <mat-toolbar>
+    <div class="mobile">
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <a class="title" href="#body">Colin</a>
+    <span class="fill"></span>
+
+    <div class="mobile">
+      <mat-menu #moreMenu="matMenu">
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Help</button>
+      </mat-menu>
+
+      <button mat-icon-button [matMenuTriggerFor]="moreMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</header>

@@ -1,4 +1,282 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/variables.scss';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: inherit;
+  width: inherit;
+  min-height: inherit;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+body {
+  color: $color_2;
+  background: 323232;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.5;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color_1;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 42px;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 24px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+h4 {
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: capitalize;
+}
+h5 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+
+  &.lead {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.bg-struct {
+  position: absolute;
+  height: 480px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.mdl-layout__container {
+  height: auto;
+  position: static;
+  width: auto;
+
+  .mdl-layout__drawer,
+  .mdl-layout__obfuscator {
+    position: fixed;
+  }
+}
+
+.container {
+  width: 970px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.mat-card {
+  color: inherit !important;
+  background-color: #fff;
+  border-radius: 2px !important;
+  width: auto;
+  min-height: inherit;
+  position: static !important;
+  overflow: visible;
+  padding: 45px 25px !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03),
+    0 3px 1px -2px rgba(0, 0, 0, 0.03), 0 1px 5px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+a {
+  color: $color_2;
+  text-decoration: none;
+  @include transition(0.3s ease);
+
+  &:hover {
+    color: $primary_purple;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile {
+    display: none;
+  }
+}
+
+$num: 0;
+@while $num < 251 {
+  .mt-#{$num} {
+    margin-top: $num + 0px !important;
+  }
+  $num: $num + 5;
+}
+
+$num: 0;
+@while $num < 96 {
+  .mb-#{$num} {
+    margin-bottom: $num + 0px !important;
+  }
+  $num: $num + 5;
+}
+
+$num: 0;
+@while $num < 51 {
+  .mr-#{$num} {
+    margin-right: $num + 0px !important;
+  }
+  $num: $num + 5;
+}
+
+.font-dark {
+  color: $color_1 !important;
+}
+.font-grey {
+  color: $color_2 !important;
+}
+.font-white {
+  color: $color_white !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.skills {
+  .angular-progress-bar {
+    .mat-progress-bar-fill::after {
+      background-color: $angular_red;
+    }
+  }
+
+  .react-progress-bar {
+    .mat-progress-bar-fill::after {
+      background-color: $react_blue;
+    }
+  }
+
+  .vue-progress-bar {
+    .mat-progress-bar-fill::after {
+      background-color: $vue_green;
+    }
+  }
+
+  .mat-progress-bar-buffer {
+    background-color: lightgrey;
+  }
+}

@@ -1,0 +1,22 @@
+.skills {
+  padding-top: 40px;
+
+  .row {
+    .col-sm-6 {
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .progress-cat {
+        padding-bottom: 14px;
+        display: block;
+        font-size: 14px;
+      }
+
+      .mat-slider {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+  }
+}

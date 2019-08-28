@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+
+.about {
+  .avatar {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background: url('../../../assets/cmackey.jpg');
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .profile-wrapper {
+    li {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .profile-title,
+      .profile-desc {
+        display: inline-block;
+      }
+
+      div {
+        &.profile-title {
+          width: 150px;
+          margin-right: 20px;
+          text-transform: capitalize;
+          color: $color_1;
+        }
+      }
+    }
+  }
+}

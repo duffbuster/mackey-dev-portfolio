@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+.social-icons {
+  text-align: center;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 0 9px;
+
+    a {
+      i {
+        color: $color_2;
+        font-size: 18px;
+        transition: 0.3s ease;
+      }
+
+      &.facebook-link {
+        &:hover {
+          i {
+            color: rgb(59, 89, 152);
+          }
+        }
+      }
+
+      &.twitter-link {
+        &:hover {
+          i {
+            color: rgb(85, 172, 238);
+          }
+        }
+      }
+
+      &.linkedin-link {
+        &:hover {
+          i {
+            color: rgb(0, 123, 182);
+          }
+        }
+      }
+
+      &.instagram-link {
+        &:hover {
+          i {
+            color: rgb(63, 114, 155);
+          }
+        }
+      }
+    }
+  }
+}
