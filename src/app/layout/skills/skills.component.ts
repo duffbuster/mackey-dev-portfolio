@@ -6,11 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  public angularValue = 90;
-  public reactValue = 75;
-  public vueValue = 33;
+  public angularValue: number;
+  public reactValue: number;
+  public vueValue: number;
+
+  public communication: number;
+  public motivation: number;
+  public collaboration: number;
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    setTimeout(() => {
+      this.angularValue = 90;
+      this.reactValue = 75;
+      this.vueValue = 33;
+
+      this.communication = 80;
+      this.motivation = 100;
+      this.collaboration = 90;
+    }, 300);
+  }
 }

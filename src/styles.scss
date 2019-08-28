@@ -210,7 +210,8 @@ a {
   @include transition(0.3s ease);
 
   &:hover {
-    color: $primary_color;
+    // color: $primary_color;
+    color: $dark_primary;
   }
 }
 

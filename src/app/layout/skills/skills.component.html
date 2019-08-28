@@ -25,7 +25,26 @@
     </div>
     <div class="col-sm-6 mb-30">
       <h2 class="mb-30">Soft Skills</h2>
-      <mat-card></mat-card>
+      <mat-card>
+        <div class="mb-30">
+          <span class="progress-cat">
+            Communication
+          </span>
+          <mat-progress-bar class="angular-progress-bar" [value]="communication"></mat-progress-bar>
+        </div>
+        <div class="mb-30">
+          <span class="progress-cat">
+            Motivation
+          </span>
+          <mat-progress-bar class="react-progress-bar" [value]="motivation"></mat-progress-bar>
+        </div>
+        <div class="mb-30">
+          <span class="progress-cat">
+            Collaboration
+          </span>
+          <mat-progress-bar class="vue-progress-bar" [value]="collaboration"></mat-progress-bar>
+        </div>
+      </mat-card>
     </div>
   </div>
 </section>
