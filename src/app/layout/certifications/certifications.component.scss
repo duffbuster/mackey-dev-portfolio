@@ -1,0 +1,18 @@
+@import '../../../styles/variables.scss';
+
+.certifications {
+  .mat-card {
+    align-items: center;
+    display: flex;
+
+    .aws {
+      margin-right: 30px;
+      width: 120px;
+    }
+
+    .cert {
+      margin-left: 30px;
+      width: 170px;
+    }
+  }
+}
