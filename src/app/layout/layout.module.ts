@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AboutComponent } from './about/about.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout.component';
@@ -17,23 +18,24 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 @NgModule({
   declarations: [
-    LayoutComponent,
-    HeaderComponent,
     AboutComponent,
+    CertificationsComponent,
     FooterComponent,
+    HeaderComponent,
+    LayoutComponent,
+    SkillsComponent,
     SocialIconsComponent,
-    SkillsComponent
   ],
   imports: [
     CommonModule,
     MatCardModule,
-    MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    MatProgressBarModule,
+    MatToolbarModule,
     MatTooltipModule,
-    MatProgressBarModule
   ],
-  exports: [LayoutComponent]
+  exports: [LayoutComponent],
 })
 export class LayoutModule {}
