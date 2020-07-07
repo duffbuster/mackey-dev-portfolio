@@ -3,16 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'mdev-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
   public angularValue: number;
   public reactValue: number;
   public vueValue: number;
 
-  public communication: number;
-  public motivation: number;
-  public collaboration: number;
+  public stopping: number;
+  public collaborating: number;
+  public listening: number;
 
   constructor() {}
 
@@ -22,9 +22,9 @@ export class SkillsComponent implements OnInit {
       this.reactValue = 75;
       this.vueValue = 33;
 
-      this.communication = 80;
-      this.motivation = 100;
-      this.collaboration = 90;
-    }, 300);
+      this.stopping = 50;
+      this.collaborating = 75;
+      this.listening = 100;
+    }, 400);
   }
 }
